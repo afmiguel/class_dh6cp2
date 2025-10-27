@@ -5,4 +5,7 @@ fn main() {
     println!("Original: {}", shared_data);
 
     println!("---");
+
+    let listener1 = Rc::clone(&shared_data);
+    println!("listener1: {}", listener1);
 }
